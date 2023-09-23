@@ -1,0 +1,1740 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>小说推荐排行榜-影书</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="影书,网络小说推荐,小说排行榜,最新小说" />
+  <meta name="description" content="影书网络小说排行榜为大家精选了当前最新最火热的网络小说。新书速递，最新小说阅读尽在影书。" />
+  <link rel="stylesheet" type="text/css" href="/style/yuedu.css" />
+  <script type="text/javascript" src="https://libs.baidu.com/jquery/1.4.2/jquery.min.js"></script>
+  <!--<script type="text/javascript" src="http://cbjs.baidu.com/js/m.js"></script>-->
+  <script type="text/javascript" src="/style/bqg.js"></script>
+  <script src="/js/pc_pf.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <script>login();</script>
+    <script type="text/javascript" src="/style/yuedu.js"></script>
+    <div class="header">
+      <div class="header_logo">
+        <a href="https://www.yingsx.com">影书</a>
+      </div>
+      <script>bqg_panel();</script>
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="https://www.yingsx.com/">首页</a></li>
+        <li><a href="/modules/article/bookcase.php">我的书架</a></li>
+        <li><a href="/xuanhuan/">玄幻奇幻</a></li>
+        <li><a href="/xianxia/">修真仙侠</a></li>
+        <li><a href="/qingchun/">青春都市</a></li>
+        <li><a href="/chuanyue/">历史穿越</a></li>
+        <li><a href="/jingji/">网游竞技</a></li>
+        <li><a href="/xuanyi/">科幻悬疑</a></li>
+        <li><a href="/paihangbang/">排行榜单</a></li>
+        <li><a href="/quanbu/">全部小说</a></li>
+        <li>
+          <script type="text/javascript">yuedu();</script>
+        </li>
+      </ul>
+    </div>
+    <div id="banner" style="display:none"></div>
+    <div id="center_tip"><b>最新网址：www.yingsx.com</b></div>
+    <div id="main">
+
+      <style type="text/css">
+        ol li,
+        ul li {
+          list-style: none;
+        }
+
+        #tops_nav {
+          margin-top: 15px;
+          height: 30px;
+          border: 1px solid #9AE6C5;
+          background-color: #E3F4E7;
+        }
+
+        #tops_nav ol {
+          margin: 0 auto;
+          width: 960px;
+          line-height: 30px;
+        }
+
+        #tops_nav ol li {
+          float: left;
+          padding-top: 0 !important;
+          padding-top: 4px;
+          width: 320px;
+          text-align: center;
+        }
+
+        #tops_nav ol li input {
+          height: 22px;
+          line-height: 22px;
+          width: 100px;
+          background-color: #DDF2FF;
+          border: 1px solid #83B0E1;
+        }
+
+        .box {
+          float: left;
+          padding-top: 25px;
+          margin: 25px 4px auto 4px;
+          width: 234px;
+          height: 549px;
+          border-style: solid;
+          border-width: 1px;
+          position: relative;
+        }
+
+        .box h3 {
+          top: -13px;
+          left: 37px;
+          width: 161px;
+          height: 24px;
+          line-height: 24px;
+          border-style: solid;
+          border-width: 1px;
+          font-size: 12px;
+          text-align: center;
+          position: absolute;
+        }
+
+        .box ul {
+          width: 96%;
+        }
+
+        .box ul li {
+          padding-left: 10px;
+          height: 24px;
+          line-height: 25px;
+          border-bottom: 1px solid #e4e4e4;
+          font-size: 12px;
+          text-align: left;
+          position: relative;
+        }
+
+        .box ul li.more {
+          border-bottom: 0;
+        }
+
+        .box ul li.ltitle span,
+        .box ul li.ltitle span a {
+          color: #555;
+        }
+
+        .box ul li.ltitle span a,
+        .box ul li.ltitle span a:hover {
+          color: #555;
+          text-decoration: underline;
+        }
+
+        .box ul li a {
+          margin-left: 10px;
+          line-height: 25px;
+          color: #3366BB;
+        }
+
+        .box ul li a:hover {
+          color: #F60;
+          text-decoration: underline;
+        }
+
+        .box ul li span {
+          right: 10px;
+          top: 0px;
+          position: absolute;
+        }
+
+        .b1,
+        .b1 h3 {
+          border-color: #F9CDDE;
+        }
+
+        .b1 h3 {
+          background-color: #FCDEEA;
+        }
+
+        .b2,
+        .b2 h3 {
+          border-color: #B0DBEC;
+        }
+
+        .b2 h3 {
+          background-color: #D6ECF7;
+        }
+
+        .b3,
+        .b3 h3 {
+          border-color: #EFEAAA;
+        }
+
+        .b3 h3 {
+          background-color: #FAF1D4;
+        }
+
+        .b4,
+        .b4 h3 {
+          border-color: #D5E6B9;
+        }
+
+        .b4 h3 {
+          background-color: #E5F8CB;
+        }
+      </style>
+
+      <script language="javascript" type="text/javascript">
+
+        $(function ($) {
+          $(".ltitle a").click(function () {
+            var pos = $(this).attr('alt');
+            var self = $(this).parent().parent().parent();
+            self.hide();
+            self.parent().children('ul').eq(pos).show();
+          });
+        });
+      </script>
+
+      <div id="main">
+        <div id="tops_nav">
+          <ol>
+            <li><input type="button" value="小说推荐排行榜" onclick="window.location='allvote.html'" /></li>
+            <li><input type="button" value="小说收藏排行榜" onclick="window.location='goodnum.html'" /></li>
+            <li><input type="button" value="小说新书入库榜" onclick="window.location='newbook.html'" /></li>
+          </ol>
+        </div>
+
+
+
+        <div class="box b1">
+          <h3>玄幻·奇幻小说推荐排行榜</h3>
+          <ul>
+            <li class="ltitle">总排名 <span>总 <a href="####" alt="1">周</a><a href="####" alt="2">月</a><a href="####"
+                  alt="3">日</a></span></li>
+
+
+            <li>1<a href="https://www.yingsx.com/0_384/">斗罗大陆4</a></li>
+
+            <li>2<a href="https://www.yingsx.com/5_5556/">斗罗大陆II绝世唐门</a></li>
+
+            <li>3<a href="https://www.yingsx.com/5_5731/">完美世界</a></li>
+
+            <li>4<a href="https://www.yingsx.com/5_5166/">终极斗罗</a></li>
+
+            <li>5<a href="https://www.yingsx.com/0_680/">陆鸣至尊神殿</a></li>
+
+            <li>6<a href="https://www.yingsx.com/5_5593/">琴帝</a></li>
+
+            <li>7<a href="https://www.yingsx.com/0_380/">叶辰孙怡夏若雪</a></li>
+
+            <li>8<a href="https://www.yingsx.com/6_6398/">神印王座</a></li>
+
+            <li>9<a href="https://www.yingsx.com/6_6340/">天珠变</a></li>
+
+            <li>10<a href="https://www.yingsx.com/3_3125/">斗罗大陆5重生唐三</a></li>
+
+            <li>11<a href="https://www.yingsx.com/5_5573/">酒神</a></li>
+
+            <li>12<a href="https://www.yingsx.com/0_381/">临渊行</a></li>
+
+            <li>13<a href="https://www.yingsx.com/0_100/">元尊</a></li>
+
+            <li>14<a href="https://www.yingsx.com/5_5851/">斗罗大陆</a></li>
+
+            <li>15<a href="https://www.yingsx.com/0_376/">斗罗大陆IV终极斗罗</a></li>
+
+            <li>16<a href="https://www.yingsx.com/5_5785/">武动乾坤</a></li>
+
+            <li>17<a href="https://www.yingsx.com/1_1576/">圣墟</a></li>
+
+            <li>18<a href="https://www.yingsx.com/0_146/">左道倾天</a></li>
+
+            <li>19<a href="https://www.yingsx.com/0_30/">伏天氏</a></li>
+
+            <li>20<a href="https://www.yingsx.com/22_22475/">妖神记</a></li>
+
+            <li class="more"><span><a href="/xuanhuan/">更多</a></span></li>
+          </ul>
+          <ul style="display:none;">
+            <li class="ltitle">周排名 <span><a href="####" alt="0">总</a> 周<a href="####" alt="2">月</a><a href="####"
+                  alt="3">日</a></span></li>
+
+            <li>1<a href="https://www.yingsx.com/9_9030/">修真界的微信拍卖群</a></li>
+
+            <li>2<a href="https://www.yingsx.com/48_48035/">蜀道再现</a></li>
+
+            <li>3<a href="https://www.yingsx.com/71_71981/">从流星蝴蝶剑开始</a></li>
+
+            <li>4<a href="https://www.yingsx.com/6_6398/">神印王座</a></li>
+
+            <li>5<a href="https://www.yingsx.com/15_15931/">万古第一神</a></li>
+
+            <li>6<a href="https://www.yingsx.com/65_65518/">我的影子开外挂啊</a></li>
+
+            <li>7<a href="https://www.yingsx.com/50_50779/">我家地球连诸天</a></li>
+
+            <li>8<a href="https://www.yingsx.com/6_6835/">武神空间</a></li>
+
+            <li>9<a href="https://www.yingsx.com/70_70939/">吞天决</a></li>
+
+            <li>10<a href="https://www.yingsx.com/23_23996/">超级搜鬼仪</a></li>
+
+            <li>11<a href="https://www.yingsx.com/93_93866/">我在综武摸鱼的日子</a></li>
+
+            <li>12<a href="https://www.yingsx.com/5_5634/">我和二哈共系统</a></li>
+
+            <li>13<a href="https://www.yingsx.com/6_6269/">人道至尊</a></li>
+
+            <li>14<a href="https://www.yingsx.com/55_55345/">钢铁火药和施法者</a></li>
+
+            <li>15<a href="https://www.yingsx.com/32_32615/">不败武尊瞬间升级999</a></li>
+
+            <li>16<a href="https://www.yingsx.com/17_17705/">武破九荒</a></li>
+
+            <li>17<a href="https://www.yingsx.com/0_811/">从垃圾工到星空战神</a></li>
+
+            <li>18<a href="https://www.yingsx.com/0_695/">乱世枭雄</a></li>
+
+            <li>19<a href="https://www.yingsx.com/5_5317/">我夺舍了魔皇</a></li>
+
+            <li>20<a href="https://www.yingsx.com/3_3125/">斗罗大陆5重生唐三</a></li>
+
+            <li class="more"><span><a href="/xuanhuan/">更多</a></span></li>
+          </ul>
+          <ul style="display:none;">
+            <li class="ltitle">月排名 <span><a href="####" alt="0">总</a><a href="####" alt="1">周</a> 月<a href="####"
+                  alt="3">日</a></span></li>
+
+            <li>1<a href="https://www.yingsx.com/6_6398/">神印王座</a></li>
+
+            <li>2<a href="https://www.yingsx.com/6_6269/">人道至尊</a></li>
+
+            <li>3<a href="https://www.yingsx.com/9_9030/">修真界的微信拍卖群</a></li>
+
+            <li>4<a href="https://www.yingsx.com/51_51973/">我能升级万物</a></li>
+
+            <li>5<a href="https://www.yingsx.com/48_48035/">蜀道再现</a></li>
+
+            <li>6<a href="https://www.yingsx.com/16_16968/">我有一座诸天城</a></li>
+
+            <li>7<a href="https://www.yingsx.com/71_71981/">从流星蝴蝶剑开始</a></li>
+
+            <li>8<a href="https://www.yingsx.com/97_97516/">高武：无敌从基础箭法开始</a></li>
+
+            <li>9<a href="https://www.yingsx.com/3_3125/">斗罗大陆5重生唐三</a></li>
+
+            <li>10<a href="https://www.yingsx.com/5_5634/">我和二哈共系统</a></li>
+
+            <li>11<a href="https://www.yingsx.com/15_15931/">万古第一神</a></li>
+
+            <li>12<a href="https://www.yingsx.com/70_70939/">吞天决</a></li>
+
+            <li>13<a href="https://www.yingsx.com/1_1774/">踏天无痕</a></li>
+
+            <li>14<a href="https://www.yingsx.com/17_17705/">武破九荒</a></li>
+
+            <li>15<a href="https://www.yingsx.com/0_30/">伏天氏</a></li>
+
+            <li>16<a href="https://www.yingsx.com/54_54146/">异世绝恋：浅吟半世殇离</a></li>
+
+            <li>17<a href="https://www.yingsx.com/0_376/">斗罗大陆IV终极斗罗</a></li>
+
+            <li>18<a href="https://www.yingsx.com/0_58/">魔临</a></li>
+
+            <li>19<a href="https://www.yingsx.com/93_93866/">我在综武摸鱼的日子</a></li>
+
+            <li>20<a href="https://www.yingsx.com/21_21090/">万古最强宗</a></li>
+
+            <li class="more"><span><a href="/xuanhuan/">更多</a></span></li>
+          </ul>
+          <ul style="display:none;">
+            <li class="ltitle">日排名 <span><a href="####" alt="0">总</a><a href="####" alt="1">周</a><a href="####"
+                  alt="2">月</a> 日</span></li>
+
+            <li>1<a href="https://www.yingsx.com/9_9030/">修真界的微信拍卖群</a></li>
+
+            <li>2<a href="https://www.yingsx.com/71_71981/">从流星蝴蝶剑开始</a></li>
+
+            <li>3<a href="https://www.yingsx.com/15_15931/">万古第一神</a></li>
+
+            <li>4<a href="https://www.yingsx.com/48_48035/">蜀道再现</a></li>
+
+            <li>5<a href="https://www.yingsx.com/65_65518/">我的影子开外挂啊</a></li>
+
+            <li>6<a href="https://www.yingsx.com/50_50779/">我家地球连诸天</a></li>
+
+            <li>7<a href="https://www.yingsx.com/5_5634/">我和二哈共系统</a></li>
+
+            <li>8<a href="https://www.yingsx.com/32_32615/">不败武尊瞬间升级999</a></li>
+
+            <li>9<a href="https://www.yingsx.com/0_695/">乱世枭雄</a></li>
+
+            <li>10<a href="https://www.yingsx.com/97_97516/">高武：无敌从基础箭法开始</a></li>
+
+            <li>11<a href="https://www.yingsx.com/70_70939/">吞天决</a></li>
+
+            <li>12<a href="https://www.yingsx.com/51_51973/">我能升级万物</a></li>
+
+            <li>13<a href="https://www.yingsx.com/22_22679/">剑噬天下</a></li>
+
+            <li>14<a href="https://www.yingsx.com/5_5317/">我夺舍了魔皇</a></li>
+
+            <li>15<a href="https://www.yingsx.com/76_76491/">十方乱世，人间武圣！</a></li>
+
+            <li>16<a href="https://www.yingsx.com/51_51497/">我的系统不正常</a></li>
+
+            <li>17<a href="https://www.yingsx.com/6_6403/">我真要逆天啦</a></li>
+
+            <li>18<a href="https://www.yingsx.com/88_88924/">武道长生从内丹术开始</a></li>
+
+            <li>19<a href="https://www.yingsx.com/37_37052/">我的毒功已天下无双</a></li>
+
+            <li>20<a href="https://www.yingsx.com/18_18075/">神级王者升级系统</a></li>
+
+            <li class="more"><span><a href="/xuanhuan/">更多</a></span></li>
+          </ul>
+        </div>
+
+        <div class="box b2">
+          <h3>修真·仙侠小说推荐排行榜</h3>
+          <ul>
+            <li class="ltitle">总排名 <span>总 <a href="####" alt="1">周</a><a href="####" alt="2">月</a><a href="####"
+                  alt="3">日</a></span></li>
+
+
+            <li>1<a href="https://www.yingsx.com/2_2791/">大奉打更人</a></li>
+
+            <li>2<a href="https://www.yingsx.com/23_23981/">我师兄实在太稳健了</a></li>
+
+            <li>3<a href="https://www.yingsx.com/30_30933/">我真不是仙二代</a></li>
+
+            <li>4<a href="https://www.yingsx.com/5_5715/">星辰变</a></li>
+
+            <li>5<a href="https://www.yingsx.com/2_2041/">帝道独尊</a></li>
+
+            <li>6<a href="https://www.yingsx.com/0_103/">凡人修仙之仙界篇</a></li>
+
+            <li>7<a href="https://www.yingsx.com/5_5154/">仙宫</a></li>
+
+            <li>8<a href="https://www.yingsx.com/5_5738/">仙逆</a></li>
+
+            <li>9<a href="https://www.yingsx.com/5_5688/">遮天</a></li>
+
+            <li>10<a href="https://www.yingsx.com/6_6120/">最强弃少</a></li>
+
+            <li>11<a href="https://www.yingsx.com/1_1617/">永恒国度</a></li>
+
+            <li>12<a href="https://www.yingsx.com/22_22388/">极品女仙</a></li>
+
+            <li>13<a href="https://www.yingsx.com/17_17929/">永恒圣王</a></li>
+
+            <li>14<a href="https://www.yingsx.com/22_22435/">魔天记</a></li>
+
+            <li>15<a href="https://www.yingsx.com/0_516/">一品道门</a></li>
+
+            <li>16<a href="https://www.yingsx.com/1_1378/">玄浑道章</a></li>
+
+            <li>17<a href="https://www.yingsx.com/5_5635/">兔子必须死</a></li>
+
+            <li>18<a href="https://www.yingsx.com/1_1935/">大数据修仙</a></li>
+
+            <li>19<a href="https://www.yingsx.com/22_22249/">蛊真人</a></li>
+
+            <li>20<a href="https://www.yingsx.com/3_3771/">御九天</a></li>
+
+            <li class="more"><span><a href="/xianxia/">更多</a></span></li>
+          </ul>
+          <ul style="display:none;">
+            <li class="ltitle">周排名 <span><a href="####" alt="0">总</a> 周<a href="####" alt="2">月</a><a href="####"
+                  alt="3">日</a></span></li>
+
+            <li>1<a href="https://www.yingsx.com/8_8786/">命之途</a></li>
+
+            <li>2<a href="https://www.yingsx.com/25_25046/">最强功法升级系统</a></li>
+
+            <li>3<a href="https://www.yingsx.com/6_6306/">最强反套路系统</a></li>
+
+            <li>4<a href="https://www.yingsx.com/58_58522/">从逍遥派开始签到</a></li>
+
+            <li>5<a href="https://www.yingsx.com/48_48717/">我不可能是剑神</a></li>
+
+            <li>6<a href="https://www.yingsx.com/30_30696/">诸天辟邪</a></li>
+
+            <li>7<a href="https://www.yingsx.com/41_41549/">全能系统之百变系统</a></li>
+
+            <li>8<a href="https://www.yingsx.com/20_20254/">我真的是画师</a></li>
+
+            <li>9<a href="https://www.yingsx.com/7_7540/">修真世界</a></li>
+
+            <li>10<a href="https://www.yingsx.com/39_39500/">开局签到一颗异兽蛋</a></li>
+
+            <li>11<a href="https://www.yingsx.com/23_23226/">从前有座灵剑山</a></li>
+
+            <li>12<a href="https://www.yingsx.com/20_20640/">修仙从复制开始</a></li>
+
+            <li>13<a href="https://www.yingsx.com/88_88007/">诡异世界，我能敕封神明</a></li>
+
+            <li>14<a href="https://www.yingsx.com/60_60366/">青云仙途</a></li>
+
+            <li>15<a href="https://www.yingsx.com/19_19917/">诸天召唤系统</a></li>
+
+            <li>16<a href="https://www.yingsx.com/18_18008/">残阳九变</a></li>
+
+            <li>17<a href="https://www.yingsx.com/95_95571/">我在仙侠世界被祖国征召了</a></li>
+
+            <li>18<a href="https://www.yingsx.com/70_70475/">问天仙侠录</a></li>
+
+            <li>19<a href="https://www.yingsx.com/54_54005/">洪荒之开局暴打东皇太一</a></li>
+
+            <li>20<a href="https://www.yingsx.com/4_4529/">焚天路</a></li>
+
+            <li class="more"><span><a href="/xianxia/">更多</a></span></li>
+          </ul>
+          <ul style="display:none;">
+            <li class="ltitle">月排名 <span><a href="####" alt="0">总</a><a href="####" alt="1">周</a> 月<a href="####"
+                  alt="3">日</a></span></li>
+
+            <li>1<a href="https://www.yingsx.com/8_8662/">少年医仙</a></li>
+
+            <li>2<a href="https://www.yingsx.com/58_58522/">从逍遥派开始签到</a></li>
+
+            <li>3<a href="https://www.yingsx.com/31_31584/">都市最强修真学生</a></li>
+
+            <li>4<a href="https://www.yingsx.com/8_8786/">命之途</a></li>
+
+            <li>5<a href="https://www.yingsx.com/25_25046/">最强功法升级系统</a></li>
+
+            <li>6<a href="https://www.yingsx.com/3_3414/">封神之重生哪吒</a></li>
+
+            <li>7<a href="https://www.yingsx.com/6_6306/">最强反套路系统</a></li>
+
+            <li>8<a href="https://www.yingsx.com/70_70851/">诸天从陆小凤开始</a></li>
+
+            <li>9<a href="https://www.yingsx.com/48_48717/">我不可能是剑神</a></li>
+
+            <li>10<a href="https://www.yingsx.com/30_30696/">诸天辟邪</a></li>
+
+            <li>11<a href="https://www.yingsx.com/18_18008/">残阳九变</a></li>
+
+            <li>12<a href="https://www.yingsx.com/47_47213/">五仙门</a></li>
+
+            <li>13<a href="https://www.yingsx.com/23_23981/">我师兄实在太稳健了</a></li>
+
+            <li>14<a href="https://www.yingsx.com/41_41549/">全能系统之百变系统</a></li>
+
+            <li>15<a href="https://www.yingsx.com/20_20254/">我真的是画师</a></li>
+
+            <li>16<a href="https://www.yingsx.com/7_7540/">修真世界</a></li>
+
+            <li>17<a href="https://www.yingsx.com/54_54783/">天庭最后一个大佬</a></li>
+
+            <li>18<a href="https://www.yingsx.com/88_88007/">诡异世界，我能敕封神明</a></li>
+
+            <li>19<a href="https://www.yingsx.com/61_61720/">我从战斗余波中提取属性</a></li>
+
+            <li>20<a href="https://www.yingsx.com/39_39500/">开局签到一颗异兽蛋</a></li>
+
+            <li class="more"><span><a href="/xianxia/">更多</a></span></li>
+          </ul>
+          <ul style="display:none;">
+            <li class="ltitle">日排名 <span><a href="####" alt="0">总</a><a href="####" alt="1">周</a><a href="####"
+                  alt="2">月</a> 日</span></li>
+
+            <li>1<a href="https://www.yingsx.com/8_8786/">命之途</a></li>
+
+            <li>2<a href="https://www.yingsx.com/25_25046/">最强功法升级系统</a></li>
+
+            <li>3<a href="https://www.yingsx.com/48_48717/">我不可能是剑神</a></li>
+
+            <li>4<a href="https://www.yingsx.com/30_30696/">诸天辟邪</a></li>
+
+            <li>5<a href="https://www.yingsx.com/41_41549/">全能系统之百变系统</a></li>
+
+            <li>6<a href="https://www.yingsx.com/20_20254/">我真的是画师</a></li>
+
+            <li>7<a href="https://www.yingsx.com/39_39500/">开局签到一颗异兽蛋</a></li>
+
+            <li>8<a href="https://www.yingsx.com/23_23226/">从前有座灵剑山</a></li>
+
+            <li>9<a href="https://www.yingsx.com/20_20640/">修仙从复制开始</a></li>
+
+            <li>10<a href="https://www.yingsx.com/88_88007/">诡异世界，我能敕封神明</a></li>
+
+            <li>11<a href="https://www.yingsx.com/19_19917/">诸天召唤系统</a></li>
+
+            <li>12<a href="https://www.yingsx.com/95_95571/">我在仙侠世界被祖国征召了</a></li>
+
+            <li>13<a href="https://www.yingsx.com/70_70475/">问天仙侠录</a></li>
+
+            <li>14<a href="https://www.yingsx.com/60_60366/">青云仙途</a></li>
+
+            <li>15<a href="https://www.yingsx.com/58_58522/">从逍遥派开始签到</a></li>
+
+            <li>16<a href="https://www.yingsx.com/54_54005/">洪荒之开局暴打东皇太一</a></li>
+
+            <li>17<a href="https://www.yingsx.com/7_7540/">修真世界</a></li>
+
+            <li>18<a href="https://www.yingsx.com/41_41848/">渡劫之王</a></li>
+
+            <li>19<a href="https://www.yingsx.com/35_35521/">扇花录</a></li>
+
+            <li>20<a href="https://www.yingsx.com/35_35685/">重生西游之齐天大圣</a></li>
+
+            <li class="more"><span><a href="/xianxia/">更多</a></span></li>
+          </ul>
+        </div>
+
+        <div class="box b3">
+          <h3>都市·青春小说推荐排行榜</h3>
+          <ul>
+            <li class="ltitle">总排名 <span>总 <a href="####" alt="1">周</a><a href="####" alt="2">月</a><a href="####"
+                  alt="3">日</a></span></li>
+
+
+            <li>1<a href="https://www.yingsx.com/53_53010/">老子能召唤万物</a></li>
+
+            <li>2<a href="https://www.yingsx.com/3_3984/">死亡万花筒</a></li>
+
+            <li>3<a href="https://www.yingsx.com/4_4160/">AWM[绝地求生]</a></li>
+
+            <li>4<a href="https://www.yingsx.com/3_3894/">神级龙卫</a></li>
+
+            <li>5<a href="https://www.yingsx.com/5_5864/">天才相师</a></li>
+
+            <li>6<a href="https://www.yingsx.com/0_472/">偷偷藏不住</a></li>
+
+            <li>7<a href="https://www.yingsx.com/6_6974/">良陈美锦</a></li>
+
+            <li>8<a href="https://www.yingsx.com/18_18262/">都市古仙医</a></li>
+
+            <li>9<a href="https://www.yingsx.com/2_2297/">韩三千苏迎夏</a></li>
+
+            <li>10<a href="https://www.yingsx.com/27_27127/">全能千金帅炸了</a></li>
+
+            <li>11<a href="https://www.yingsx.com/11_11252/">名门闺杀</a></li>
+
+            <li>12<a href="https://www.yingsx.com/0_412/">游戏加载中</a></li>
+
+            <li>13<a href="https://www.yingsx.com/2_2345/">破云</a></li>
+
+            <li>14<a href="https://www.yingsx.com/5_5636/">我真没想出名啊</a></li>
+
+            <li>15<a href="https://www.yingsx.com/16_16298/">重生女配洗白日常</a></li>
+
+            <li>16<a href="https://www.yingsx.com/38_38614/">被大佬们团宠后我野翻了</a></li>
+
+            <li>17<a href="https://www.yingsx.com/4_4285/">冰糖炖雪梨</a></li>
+
+            <li>18<a href="https://www.yingsx.com/5_5711/">隐杀</a></li>
+
+            <li>19<a href="https://www.yingsx.com/7_7796/">花娇</a></li>
+
+            <li>20<a href="https://www.yingsx.com/5_5165/">仙帝归来当奶爸</a></li>
+
+            <li class="more"><span><a href="/qingchun/">更多</a></span></li>
+          </ul>
+          <ul style="display:none;">
+            <li class="ltitle">周排名 <span><a href="####" alt="0">总</a> 周<a href="####" alt="2">月</a><a href="####"
+                  alt="3">日</a></span></li>
+
+            <li>1<a href="https://www.yingsx.com/18_18347/">重生九零神医福妻</a></li>
+
+            <li>2<a href="https://www.yingsx.com/15_15398/">魔神狂后</a></li>
+
+            <li>3<a href="https://www.yingsx.com/99_99514/">重生1990：我有三根金手指</a></li>
+
+            <li>4<a href="https://www.yingsx.com/95_95874/">全属性大帝，无敌全靠捡</a></li>
+
+            <li>5<a href="https://www.yingsx.com/35_35901/">都市仙武</a></li>
+
+            <li>6<a href="https://www.yingsx.com/64_64224/">顶流喜剧人</a></li>
+
+            <li>7<a href="https://www.yingsx.com/1_1607/">我的1979</a></li>
+
+            <li>8<a href="https://www.yingsx.com/11_11014/">青春罪途</a></li>
+
+            <li>9<a href="https://www.yingsx.com/48_48723/">翩然入君心魏翩然霍纬钧</a></li>
+
+            <li>10<a href="https://www.yingsx.com/3_3765/">惹火999次：乔爷，坏！</a></li>
+
+            <li>11<a href="https://www.yingsx.com/68_68550/">脑海带着一扇门</a></li>
+
+            <li>12<a href="https://www.yingsx.com/6_6955/">六零俏军媳</a></li>
+
+            <li>13<a href="https://www.yingsx.com/76_76200/">和结婚对象成为室友之后</a></li>
+
+            <li>14<a href="https://www.yingsx.com/23_23102/">重生之玩物人生</a></li>
+
+            <li>15<a href="https://www.yingsx.com/21_21251/">隐形学霸超A的</a></li>
+
+            <li>16<a href="https://www.yingsx.com/7_7765/">商海时代陈曦</a></li>
+
+            <li>17<a href="https://www.yingsx.com/45_45371/">强化医生</a></li>
+
+            <li>18<a href="https://www.yingsx.com/24_24724/">司茶皇后</a></li>
+
+            <li>19<a href="https://www.yingsx.com/23_23457/">天眼仙医吴北唐紫怡</a></li>
+
+            <li>20<a href="https://www.yingsx.com/5_5030/">医品至尊</a></li>
+
+            <li class="more"><span><a href="/qingchun/">更多</a></span></li>
+          </ul>
+          <ul style="display:none;">
+            <li class="ltitle">月排名 <span><a href="####" alt="0">总</a><a href="####" alt="1">周</a> 月<a href="####"
+                  alt="3">日</a></span></li>
+
+            <li>1<a href="https://www.yingsx.com/18_18347/">重生九零神医福妻</a></li>
+
+            <li>2<a href="https://www.yingsx.com/5_5030/">医品至尊</a></li>
+
+            <li>3<a href="https://www.yingsx.com/1_1607/">我的1979</a></li>
+
+            <li>4<a href="https://www.yingsx.com/99_99514/">重生1990：我有三根金手指</a></li>
+
+            <li>5<a href="https://www.yingsx.com/15_15398/">魔神狂后</a></li>
+
+            <li>6<a href="https://www.yingsx.com/0_334/">女主都和男二HE</a></li>
+
+            <li>7<a href="https://www.yingsx.com/95_95874/">全属性大帝，无敌全靠捡</a></li>
+
+            <li>8<a href="https://www.yingsx.com/35_35901/">都市仙武</a></li>
+
+            <li>9<a href="https://www.yingsx.com/6_6955/">六零俏军媳</a></li>
+
+            <li>10<a href="https://www.yingsx.com/64_64224/">顶流喜剧人</a></li>
+
+            <li>11<a href="https://www.yingsx.com/85_85193/">1983：从分田到户开始</a></li>
+
+            <li>12<a href="https://www.yingsx.com/68_68303/">我真不想跟神仙打架</a></li>
+
+            <li>13<a href="https://www.yingsx.com/48_48723/">翩然入君心魏翩然霍纬钧</a></li>
+
+            <li>14<a href="https://www.yingsx.com/24_24724/">司茶皇后</a></li>
+
+            <li>15<a href="https://www.yingsx.com/1_1013/">最佳女婿</a></li>
+
+            <li>16<a href="https://www.yingsx.com/26_26615/">一品容华</a></li>
+
+            <li>17<a href="https://www.yingsx.com/23_23457/">天眼仙医吴北唐紫怡</a></li>
+
+            <li>18<a href="https://www.yingsx.com/3_3765/">惹火999次：乔爷，坏！</a></li>
+
+            <li>19<a href="https://www.yingsx.com/68_68550/">脑海带着一扇门</a></li>
+
+            <li>20<a href="https://www.yingsx.com/6_6797/">宝瞳</a></li>
+
+            <li class="more"><span><a href="/qingchun/">更多</a></span></li>
+          </ul>
+          <ul style="display:none;">
+            <li class="ltitle">日排名 <span><a href="####" alt="0">总</a><a href="####" alt="1">周</a><a href="####"
+                  alt="2">月</a> 日</span></li>
+
+            <li>1<a href="https://www.yingsx.com/64_64224/">顶流喜剧人</a></li>
+
+            <li>2<a href="https://www.yingsx.com/48_48723/">翩然入君心魏翩然霍纬钧</a></li>
+
+            <li>3<a href="https://www.yingsx.com/68_68550/">脑海带着一扇门</a></li>
+
+            <li>4<a href="https://www.yingsx.com/23_23102/">重生之玩物人生</a></li>
+
+            <li>5<a href="https://www.yingsx.com/1_1607/">我的1979</a></li>
+
+            <li>6<a href="https://www.yingsx.com/5_5030/">医品至尊</a></li>
+
+            <li>7<a href="https://www.yingsx.com/74_74280/">妙手药王在都市</a></li>
+
+            <li>8<a href="https://www.yingsx.com/48_48795/">刷点外挂</a></li>
+
+            <li>9<a href="https://www.yingsx.com/38_38608/">能力列表系统</a></li>
+
+            <li>10<a href="https://www.yingsx.com/24_24724/">司茶皇后</a></li>
+
+            <li>11<a href="https://www.yingsx.com/8_8453/">生死聚焦</a></li>
+
+            <li>12<a href="https://www.yingsx.com/99_99514/">重生1990：我有三根金手指</a></li>
+
+            <li>13<a href="https://www.yingsx.com/95_95874/">全属性大帝，无敌全靠捡</a></li>
+
+            <li>14<a href="https://www.yingsx.com/92_92438/">让你收破烂，你收到传国玉玺？</a></li>
+
+            <li>15<a href="https://www.yingsx.com/90_90104/">重生八零：科研大佬种田报效祖国</a></li>
+
+            <li>16<a href="https://www.yingsx.com/89_89864/">高武：开局简化金钟罩</a></li>
+
+            <li>17<a href="https://www.yingsx.com/78_78311/">签到八年，千亿身家被姐姐曝光！</a></li>
+
+            <li>18<a href="https://www.yingsx.com/76_76353/">重生2008：我阅读能赚钱</a></li>
+
+            <li>19<a href="https://www.yingsx.com/18_18347/">重生九零神医福妻</a></li>
+
+            <li>20<a href="https://www.yingsx.com/16_16760/">重生之小女有空间</a></li>
+
+            <li class="more"><span><a href="/qingchun/">更多</a></span></li>
+          </ul>
+        </div>
+
+        <div class="box b4">
+          <h3>历史·穿越小说推荐排行榜</h3>
+          <ul>
+            <li class="ltitle">总排名 <span>总 <a href="####" alt="1">周</a><a href="####" alt="2">月</a><a href="####"
+                  alt="3">日</a></span></li>
+
+
+            <li>1<a href="https://www.yingsx.com/0_88/">天行战记</a></li>
+
+            <li>2<a href="https://www.yingsx.com/28_28731/">绍宋</a></li>
+
+            <li>3<a href="https://www.yingsx.com/1_1075/">明天下</a></li>
+
+            <li>4<a href="https://www.yingsx.com/1_1591/">寒门状元</a></li>
+
+            <li>5<a href="https://www.yingsx.com/1_1042/">数风流人物</a></li>
+
+            <li>6<a href="https://www.yingsx.com/1_1690/">重生空间之光荣军属</a></li>
+
+            <li>7<a href="https://www.yingsx.com/2_2194/">我不是野人</a></li>
+
+            <li>8<a href="https://www.yingsx.com/17_17071/">锦衣血途</a></li>
+
+            <li>9<a href="https://www.yingsx.com/9_9343/">民国谍影</a></li>
+
+            <li>10<a href="https://www.yingsx.com/0_14/">寒门枭士</a></li>
+
+            <li>11<a href="https://www.yingsx.com/8_8445/">国士无双</a></li>
+
+            <li>12<a href="https://www.yingsx.com/21_21674/">回到明朝当王爷</a></li>
+
+            <li>13<a href="https://www.yingsx.com/23_23129/">官居一品</a></li>
+
+            <li>14<a href="https://www.yingsx.com/25_25422/">明血</a></li>
+
+            <li>15<a href="https://www.yingsx.com/37_37445/">日月风华</a></li>
+
+            <li>16<a href="https://www.yingsx.com/45_45828/">逍遥小地主</a></li>
+
+            <li>17<a href="https://www.yingsx.com/40_40095/">不让江山</a></li>
+
+            <li>18<a href="https://www.yingsx.com/1_1797/">最强狂兵</a></li>
+
+            <li>19<a href="https://www.yingsx.com/40_40217/">宋煦</a></li>
+
+            <li>20<a href="https://www.yingsx.com/1_1603/">贞观大闲人</a></li>
+
+            <li class="more"><span><a href="/chuanyue/">更多</a></span></li>
+          </ul>
+          <ul style="display:none;">
+            <li class="ltitle">周排名 <span><a href="####" alt="0">总</a> 周<a href="####" alt="2">月</a><a href="####"
+                  alt="3">日</a></span></li>
+
+            <li>1<a href="https://www.yingsx.com/12_12835/">北宋小官人的幸福生活</a></li>
+
+            <li>2<a href="https://www.yingsx.com/77_77303/">亮剑：独自发展，带回个炮兵团</a></li>
+
+            <li>3<a href="https://www.yingsx.com/67_67821/">亮剑：每个兵都了不起</a></li>
+
+            <li>4<a href="https://www.yingsx.com/28_28890/">男儿行</a></li>
+
+            <li>5<a href="https://www.yingsx.com/47_47079/">权宠医妃：失眠王爷请上榻</a></li>
+
+            <li>6<a href="https://www.yingsx.com/20_20607/">我要做皇帝</a></li>
+
+            <li>7<a href="https://www.yingsx.com/13_13638/">大唐风华路</a></li>
+
+            <li>8<a href="https://www.yingsx.com/44_44705/">穿越山贼做皇帝</a></li>
+
+            <li>9<a href="https://www.yingsx.com/17_17349/">大明闲人</a></li>
+
+            <li>10<a href="https://www.yingsx.com/51_51070/">超级特种兵之王</a></li>
+
+            <li>11<a href="https://www.yingsx.com/25_25167/">凌云志异</a></li>
+
+            <li>12<a href="https://www.yingsx.com/4_4684/">极品庶子</a></li>
+
+            <li>13<a href="https://www.yingsx.com/1_1543/">决战第三帝国</a></li>
+
+            <li>14<a href="https://www.yingsx.com/81_81457/">我的明朝之旅</a></li>
+
+            <li>15<a href="https://www.yingsx.com/23_23307/">抗战之中国远征军</a></li>
+
+            <li>16<a href="https://www.yingsx.com/15_15328/">韦浩李丽质</a></li>
+
+            <li>17<a href="https://www.yingsx.com/7_7632/">三国之最风流</a></li>
+
+            <li>18<a href="https://www.yingsx.com/76_76194/">红楼之挽天倾</a></li>
+
+            <li>19<a href="https://www.yingsx.com/51_51028/">北宋小文豪</a></li>
+
+            <li>20<a href="https://www.yingsx.com/28_28881/">被玩坏的大宋</a></li>
+
+            <li class="more"><span><a href="/chuanyue/">更多</a></span></li>
+          </ul>
+          <ul style="display:none;">
+            <li class="ltitle">月排名 <span><a href="####" alt="0">总</a><a href="####" alt="1">周</a> 月<a href="####"
+                  alt="3">日</a></span></li>
+
+            <li>1<a href="https://www.yingsx.com/23_23307/">抗战之中国远征军</a></li>
+
+            <li>2<a href="https://www.yingsx.com/12_12835/">北宋小官人的幸福生活</a></li>
+
+            <li>3<a href="https://www.yingsx.com/51_51047/">大唐最强长子</a></li>
+
+            <li>4<a href="https://www.yingsx.com/77_77303/">亮剑：独自发展，带回个炮兵团</a></li>
+
+            <li>5<a href="https://www.yingsx.com/67_67821/">亮剑：每个兵都了不起</a></li>
+
+            <li>6<a href="https://www.yingsx.com/64_64571/">我在大唐开当铺</a></li>
+
+            <li>7<a href="https://www.yingsx.com/1_1818/">锦衣春秋</a></li>
+
+            <li>8<a href="https://www.yingsx.com/13_13638/">大唐风华路</a></li>
+
+            <li>9<a href="https://www.yingsx.com/28_28890/">男儿行</a></li>
+
+            <li>10<a href="https://www.yingsx.com/3_3687/">我的姐夫是太子</a></li>
+
+            <li>11<a href="https://www.yingsx.com/4_4876/">嫡女盛世</a></li>
+
+            <li>12<a href="https://www.yingsx.com/0_15/">天下第一医馆</a></li>
+
+            <li>13<a href="https://www.yingsx.com/47_47079/">权宠医妃：失眠王爷请上榻</a></li>
+
+            <li>14<a href="https://www.yingsx.com/20_20607/">我要做皇帝</a></li>
+
+            <li>15<a href="https://www.yingsx.com/44_44705/">穿越山贼做皇帝</a></li>
+
+            <li>16<a href="https://www.yingsx.com/17_17349/">大明闲人</a></li>
+
+            <li>17<a href="https://www.yingsx.com/97_97489/">陛下真棒</a></li>
+
+            <li>18<a href="https://www.yingsx.com/30_30157/">争霸天下</a></li>
+
+            <li>19<a href="https://www.yingsx.com/22_22782/">我的第三帝国</a></li>
+
+            <li>20<a href="https://www.yingsx.com/21_21824/">明朝好丈夫</a></li>
+
+            <li class="more"><span><a href="/chuanyue/">更多</a></span></li>
+          </ul>
+          <ul style="display:none;">
+            <li class="ltitle">日排名 <span><a href="####" alt="0">总</a><a href="####" alt="1">周</a><a href="####"
+                  alt="2">月</a> 日</span></li>
+
+            <li>1<a href="https://www.yingsx.com/20_20607/">我要做皇帝</a></li>
+
+            <li>2<a href="https://www.yingsx.com/67_67821/">亮剑：每个兵都了不起</a></li>
+
+            <li>3<a href="https://www.yingsx.com/17_17349/">大明闲人</a></li>
+
+            <li>4<a href="https://www.yingsx.com/77_77303/">亮剑：独自发展，带回个炮兵团</a></li>
+
+            <li>5<a href="https://www.yingsx.com/51_51070/">超级特种兵之王</a></li>
+
+            <li>6<a href="https://www.yingsx.com/81_81457/">我的明朝之旅</a></li>
+
+            <li>7<a href="https://www.yingsx.com/23_23307/">抗战之中国远征军</a></li>
+
+            <li>8<a href="https://www.yingsx.com/13_13638/">大唐风华路</a></li>
+
+            <li>9<a href="https://www.yingsx.com/51_51028/">北宋小文豪</a></li>
+
+            <li>10<a href="https://www.yingsx.com/28_28890/">男儿行</a></li>
+
+            <li>11<a href="https://www.yingsx.com/12_12835/">北宋小官人的幸福生活</a></li>
+
+            <li>12<a href="https://www.yingsx.com/82_82000/">回到明末搞基建</a></li>
+
+            <li>13<a href="https://www.yingsx.com/53_53108/">从截胡曹操开始变强</a></li>
+
+            <li>14<a href="https://www.yingsx.com/36_36810/">朕真没想败国啊</a></li>
+
+            <li>15<a href="https://www.yingsx.com/20_20793/">重生之战神吕布</a></li>
+
+            <li>16<a href="https://www.yingsx.com/18_18674/">神秘武将抽奖系统</a></li>
+
+            <li>17<a href="https://www.yingsx.com/7_7632/">三国之最风流</a></li>
+
+            <li>18<a href="https://www.yingsx.com/1_1639/">大魏能臣</a></li>
+
+            <li>19<a href="https://www.yingsx.com/1_1016/">山沟皇帝</a></li>
+
+            <li>20<a href="https://www.yingsx.com/80_80734/">汉末最强钉子户</a></li>
+
+            <li class="more"><span><a href="/chuanyue/">更多</a></span></li>
+          </ul>
+        </div>
+
+        <div class="box b1">
+          <h3>网游·竞技小说推荐排行榜</h3>
+          <ul>
+            <li class="ltitle">总排名 <span>总 <a href="####" alt="1">周</a><a href="####" alt="2">月</a><a href="####"
+                  alt="3">日</a></span></li>
+
+
+            <li>1<a href="https://www.yingsx.com/0_804/">超神机械师</a></li>
+
+            <li>2<a href="https://www.yingsx.com/27_27267/">斩月</a></li>
+
+            <li>3<a href="https://www.yingsx.com/8_8780/">斩龙</a></li>
+
+            <li>4<a href="https://www.yingsx.com/24_24437/">世界树的游戏</a></li>
+
+            <li>5<a href="https://www.yingsx.com/6_6177/">网游之近战法师</a></li>
+
+            <li>6<a href="https://www.yingsx.com/27_27568/">斗罗之最强赘婿</a></li>
+
+            <li>7<a href="https://www.yingsx.com/5_5880/">惊悚乐园</a></li>
+
+            <li>8<a href="https://www.yingsx.com/31_31846/">从火影开始掌控时间</a></li>
+
+            <li>9<a href="https://www.yingsx.com/5_5588/">全职高手</a></li>
+
+            <li>10<a href="https://www.yingsx.com/30_30328/">平平无奇大师兄</a></li>
+
+            <li>11<a href="https://www.yingsx.com/32_32916/">峡谷之巅</a></li>
+
+            <li>12<a href="https://www.yingsx.com/0_960/">火影之超级抽奖系统</a></li>
+
+            <li>13<a href="https://www.yingsx.com/34_34020/">泡面首富</a></li>
+
+            <li>14<a href="https://www.yingsx.com/80_80086/">忍界大战太危险，跑路去当海贼吧</a></li>
+
+            <li>15<a href="https://www.yingsx.com/43_43008/">我真不是魔神</a></li>
+
+            <li>16<a href="https://www.yingsx.com/19_19924/">亏成首富从游戏开始</a></li>
+
+            <li>17<a href="https://www.yingsx.com/15_15229/">诸天大佬聊天室</a></li>
+
+            <li>18<a href="https://www.yingsx.com/16_16226/">斗罗大陆之我弟是唐三</a></li>
+
+            <li>19<a href="https://www.yingsx.com/21_21925/">疯巫妖的实验日志</a></li>
+
+            <li>20<a href="https://www.yingsx.com/45_45086/">荣耀巅峰</a></li>
+
+            <li class="more"><span><a href="/jingji/">更多</a></span></li>
+          </ul>
+          <ul style="display:none;">
+            <li class="ltitle">周排名 <span><a href="####" alt="0">总</a> 周<a href="####" alt="2">月</a><a href="####"
+                  alt="3">日</a></span></li>
+
+            <li>1<a href="https://www.yingsx.com/55_55776/">全球游戏：开局百亿灵能币</a></li>
+
+            <li>2<a href="https://www.yingsx.com/41_41841/">漫威的公主终成王</a></li>
+
+            <li>3<a href="https://www.yingsx.com/70_70769/">从jojo开始的奇妙体验</a></li>
+
+            <li>4<a href="https://www.yingsx.com/59_59833/">原神我是史莱姆</a></li>
+
+            <li>5<a href="https://www.yingsx.com/1_1872/">二次元马甲系统</a></li>
+
+            <li>6<a href="https://www.yingsx.com/54_54856/">海贼之恋爱系统</a></li>
+
+            <li>7<a href="https://www.yingsx.com/38_38702/">从斗破签到之开局十连抽</a></li>
+
+            <li>8<a href="https://www.yingsx.com/80_80086/">忍界大战太危险，跑路去当海贼吧</a></li>
+
+            <li>9<a href="https://www.yingsx.com/33_33628/">拉仇恨从斗罗开始</a></li>
+
+            <li>10<a href="https://www.yingsx.com/0_894/">女装少年终将成王</a></li>
+
+            <li>11<a href="https://www.yingsx.com/69_69947/">从龙族开始五五开</a></li>
+
+            <li>12<a href="https://www.yingsx.com/56_56466/">从斗罗开始暴躁升级</a></li>
+
+            <li>13<a href="https://www.yingsx.com/93_93326/">教练，我还不想退役啊</a></li>
+
+            <li>14<a href="https://www.yingsx.com/31_31077/">我在东京掀起百鬼夜行</a></li>
+
+            <li>15<a href="https://www.yingsx.com/21_21739/">这号有毒</a></li>
+
+            <li>16<a href="https://www.yingsx.com/45_45687/">斗罗第一刀</a></li>
+
+            <li>17<a href="https://www.yingsx.com/30_30112/">绝地求生之游戏土豪系统</a></li>
+
+            <li>18<a href="https://www.yingsx.com/92_92716/">NBA：开局满级力量，库里被我惊呆了</a></li>
+
+            <li>19<a href="https://www.yingsx.com/79_79752/">网游三国：开局毒杀刘皇叔</a></li>
+
+            <li>20<a href="https://www.yingsx.com/54_54158/">海贼之圣光剑豪</a></li>
+
+            <li class="more"><span><a href="/jingji/">更多</a></span></li>
+          </ul>
+          <ul style="display:none;">
+            <li class="ltitle">月排名 <span><a href="####" alt="0">总</a><a href="####" alt="1">周</a> 月<a href="####"
+                  alt="3">日</a></span></li>
+
+            <li>1<a href="https://www.yingsx.com/55_55776/">全球游戏：开局百亿灵能币</a></li>
+
+            <li>2<a href="https://www.yingsx.com/89_89521/">祖宗人：从格温蜘蛛侠开始</a></li>
+
+            <li>3<a href="https://www.yingsx.com/41_41841/">漫威的公主终成王</a></li>
+
+            <li>4<a href="https://www.yingsx.com/70_70769/">从jojo开始的奇妙体验</a></li>
+
+            <li>5<a href="https://www.yingsx.com/54_54856/">海贼之恋爱系统</a></li>
+
+            <li>6<a href="https://www.yingsx.com/1_1872/">二次元马甲系统</a></li>
+
+            <li>7<a href="https://www.yingsx.com/59_59833/">原神我是史莱姆</a></li>
+
+            <li>8<a href="https://www.yingsx.com/6_6177/">网游之近战法师</a></li>
+
+            <li>9<a href="https://www.yingsx.com/38_38702/">从斗破签到之开局十连抽</a></li>
+
+            <li>10<a href="https://www.yingsx.com/22_22545/">网游之模拟城市</a></li>
+
+            <li>11<a href="https://www.yingsx.com/44_44687/">斗罗之赤瞳斗罗</a></li>
+
+            <li>12<a href="https://www.yingsx.com/18_18481/">网游之剑仙降临</a></li>
+
+            <li>13<a href="https://www.yingsx.com/56_56466/">从斗罗开始暴躁升级</a></li>
+
+            <li>14<a href="https://www.yingsx.com/41_41635/">斗罗之无尽融合</a></li>
+
+            <li>15<a href="https://www.yingsx.com/36_36225/">征战诸天从斗罗开始</a></li>
+
+            <li>16<a href="https://www.yingsx.com/33_33628/">拉仇恨从斗罗开始</a></li>
+
+            <li>17<a href="https://www.yingsx.com/0_894/">女装少年终将成王</a></li>
+
+            <li>18<a href="https://www.yingsx.com/69_69947/">从龙族开始五五开</a></li>
+
+            <li>19<a href="https://www.yingsx.com/54_54846/">斗罗之签到就无敌</a></li>
+
+            <li>20<a href="https://www.yingsx.com/34_34941/">木叶之最强装遁</a></li>
+
+            <li class="more"><span><a href="/jingji/">更多</a></span></li>
+          </ul>
+          <ul style="display:none;">
+            <li class="ltitle">日排名 <span><a href="####" alt="0">总</a><a href="####" alt="1">周</a><a href="####"
+                  alt="2">月</a> 日</span></li>
+
+            <li>1<a href="https://www.yingsx.com/55_55776/">全球游戏：开局百亿灵能币</a></li>
+
+            <li>2<a href="https://www.yingsx.com/1_1872/">二次元马甲系统</a></li>
+
+            <li>3<a href="https://www.yingsx.com/38_38702/">从斗破签到之开局十连抽</a></li>
+
+            <li>4<a href="https://www.yingsx.com/33_33628/">拉仇恨从斗罗开始</a></li>
+
+            <li>5<a href="https://www.yingsx.com/0_894/">女装少年终将成王</a></li>
+
+            <li>6<a href="https://www.yingsx.com/69_69947/">从龙族开始五五开</a></li>
+
+            <li>7<a href="https://www.yingsx.com/56_56466/">从斗罗开始暴躁升级</a></li>
+
+            <li>8<a href="https://www.yingsx.com/93_93326/">教练，我还不想退役啊</a></li>
+
+            <li>9<a href="https://www.yingsx.com/31_31077/">我在东京掀起百鬼夜行</a></li>
+
+            <li>10<a href="https://www.yingsx.com/21_21739/">这号有毒</a></li>
+
+            <li>11<a href="https://www.yingsx.com/45_45687/">斗罗第一刀</a></li>
+
+            <li>12<a href="https://www.yingsx.com/30_30112/">绝地求生之游戏土豪系统</a></li>
+
+            <li>13<a href="https://www.yingsx.com/79_79752/">网游三国：开局毒杀刘皇叔</a></li>
+
+            <li>14<a href="https://www.yingsx.com/54_54158/">海贼之圣光剑豪</a></li>
+
+            <li>15<a href="https://www.yingsx.com/97_97110/">星穹列车：开局一把天火圣裁</a></li>
+
+            <li>16<a href="https://www.yingsx.com/64_64767/">龙王传说的天才科学家</a></li>
+
+            <li>17<a href="https://www.yingsx.com/64_64648/">从木叶开始的赛亚人</a></li>
+
+            <li>18<a href="https://www.yingsx.com/53_53079/">海贼之英雄降临</a></li>
+
+            <li>19<a href="https://www.yingsx.com/49_49866/">关于我在斗罗的第999次轮回</a></li>
+
+            <li>20<a href="https://www.yingsx.com/48_48277/">满级大佬也要努力修仙</a></li>
+
+            <li class="more"><span><a href="/jingji/">更多</a></span></li>
+          </ul>
+        </div>
+
+        <div class="box b2">
+          <h3>科幻·灵异小说推荐排行榜</h3>
+          <ul>
+            <li class="ltitle">总排名 <span>总 <a href="####" alt="1">周</a><a href="####" alt="2">月</a><a href="####"
+                  alt="3">日</a></span></li>
+
+
+            <li>1<a href="https://www.yingsx.com/17_17501/">女神的超级赘婿</a></li>
+
+            <li>2<a href="https://www.yingsx.com/0_325/">斗罗大陆III龙王传说</a></li>
+
+            <li>3<a href="https://www.yingsx.com/4_4098/">龙城</a></li>
+
+            <li>4<a href="https://www.yingsx.com/17_17149/">赘婿当道</a></li>
+
+            <li>5<a href="https://www.yingsx.com/34_34787/">少年风水师</a></li>
+
+            <li>6<a href="https://www.yingsx.com/6_6263/">冒牌大英雄</a></li>
+
+            <li>7<a href="https://www.yingsx.com/6_6333/">修真四万年</a></li>
+
+            <li>8<a href="https://www.yingsx.com/18_18919/">诸天最强大佬</a></li>
+
+            <li>9<a href="https://www.yingsx.com/5_5858/">吞噬星空</a></li>
+
+            <li>10<a href="https://www.yingsx.com/22_22375/">希灵帝国</a></li>
+
+            <li>11<a href="https://www.yingsx.com/23_23394/">第九特区</a></li>
+
+            <li>12<a href="https://www.yingsx.com/42_42525/">第三十九次攻略</a></li>
+
+            <li>13<a href="https://www.yingsx.com/48_48334/">高人竟在我身边</a></li>
+
+            <li>14<a href="https://www.yingsx.com/4_4266/">六迹之梦域空城</a></li>
+
+            <li>15<a href="https://www.yingsx.com/18_18597/">维度侵蚀者</a></li>
+
+            <li>16<a href="https://www.yingsx.com/45_45329/">宇宙职业选手</a></li>
+
+            <li>17<a href="https://www.yingsx.com/34_34040/">全能大佬又奶又凶</a></li>
+
+            <li>18<a href="https://www.yingsx.com/15_15783/">校园重生之王牌少女</a></li>
+
+            <li>19<a href="https://www.yingsx.com/1_1515/">史上最强狗熊系统</a></li>
+
+            <li>20<a href="https://www.yingsx.com/40_40186/">十万个氪金的理由</a></li>
+
+            <li class="more"><span><a href="/xuanyi/">更多</a></span></li>
+          </ul>
+          <ul style="display:none;">
+            <li class="ltitle">周排名 <span><a href="####" alt="0">总</a> 周<a href="####" alt="2">月</a><a href="####"
+                  alt="3">日</a></span></li>
+
+            <li>1<a href="https://www.yingsx.com/23_23896/">为了蔚蓝澄净的世界</a></li>
+
+            <li>2<a href="https://www.yingsx.com/58_58888/">你们修仙我修神</a></li>
+
+            <li>3<a href="https://www.yingsx.com/53_53632/">风水狂婿</a></li>
+
+            <li>4<a href="https://www.yingsx.com/63_63079/">影视诸天，从四合院开始反转人生</a></li>
+
+            <li>5<a href="https://www.yingsx.com/91_91276/">觉醒超人基因的我要无敌了</a></li>
+
+            <li>6<a href="https://www.yingsx.com/12_12503/">活人禁忌</a></li>
+
+            <li>7<a href="https://www.yingsx.com/29_29765/">城市新农民</a></li>
+
+            <li>8<a href="https://www.yingsx.com/55_55545/">我真是飞翔的河南人号船长啊</a></li>
+
+            <li>9<a href="https://www.yingsx.com/55_55998/">我在末世能升级</a></li>
+
+            <li>10<a href="https://www.yingsx.com/1_1656/">驭房有术</a></li>
+
+            <li>11<a href="https://www.yingsx.com/32_32360/">神级医生系统</a></li>
+
+            <li>12<a href="https://www.yingsx.com/0_712/">战斗吧祖先大人</a></li>
+
+            <li>13<a href="https://www.yingsx.com/31_31422/">逍遥兵王</a></li>
+
+            <li>14<a href="https://www.yingsx.com/26_26276/">末世异形主宰</a></li>
+
+            <li>15<a href="https://www.yingsx.com/0_735/">时空道观</a></li>
+
+            <li>16<a href="https://www.yingsx.com/97_97010/">末世指挥官</a></li>
+
+            <li>17<a href="https://www.yingsx.com/60_60855/">复活帝国</a></li>
+
+            <li>18<a href="https://www.yingsx.com/59_59611/">镇魂街之最强寄灵人</a></li>
+
+            <li>19<a href="https://www.yingsx.com/58_58642/">火力法则</a></li>
+
+            <li>20<a href="https://www.yingsx.com/26_26308/">进击的大内密探</a></li>
+
+            <li class="more"><span><a href="/xuanyi/">更多</a></span></li>
+          </ul>
+          <ul style="display:none;">
+            <li class="ltitle">月排名 <span><a href="####" alt="0">总</a><a href="####" alt="1">周</a> 月<a href="####"
+                  alt="3">日</a></span></li>
+
+            <li>1<a href="https://www.yingsx.com/23_23896/">为了蔚蓝澄净的世界</a></li>
+
+            <li>2<a href="https://www.yingsx.com/58_58888/">你们修仙我修神</a></li>
+
+            <li>3<a href="https://www.yingsx.com/53_53632/">风水狂婿</a></li>
+
+            <li>4<a href="https://www.yingsx.com/40_40908/">诸天演道</a></li>
+
+            <li>5<a href="https://www.yingsx.com/12_12503/">活人禁忌</a></li>
+
+            <li>6<a href="https://www.yingsx.com/91_91276/">觉醒超人基因的我要无敌了</a></li>
+
+            <li>7<a href="https://www.yingsx.com/63_63079/">影视诸天，从四合院开始反转人生</a></li>
+
+            <li>8<a href="https://www.yingsx.com/24_24080/">女战神的黑包群</a></li>
+
+            <li>9<a href="https://www.yingsx.com/4_4265/">深夜书屋</a></li>
+
+            <li>10<a href="https://www.yingsx.com/32_32120/">雷武神帝</a></li>
+
+            <li>11<a href="https://www.yingsx.com/29_29765/">城市新农民</a></li>
+
+            <li>12<a href="https://www.yingsx.com/12_12297/">进化狂潮</a></li>
+
+            <li>13<a href="https://www.yingsx.com/55_55545/">我真是飞翔的河南人号船长啊</a></li>
+
+            <li>14<a href="https://www.yingsx.com/55_55998/">我在末世能升级</a></li>
+
+            <li>15<a href="https://www.yingsx.com/1_1656/">驭房有术</a></li>
+
+            <li>16<a href="https://www.yingsx.com/32_32360/">神级医生系统</a></li>
+
+            <li>17<a href="https://www.yingsx.com/0_712/">战斗吧祖先大人</a></li>
+
+            <li>18<a href="https://www.yingsx.com/58_58642/">火力法则</a></li>
+
+            <li>19<a href="https://www.yingsx.com/31_31422/">逍遥兵王</a></li>
+
+            <li>20<a href="https://www.yingsx.com/26_26308/">进击的大内密探</a></li>
+
+            <li class="more"><span><a href="/xuanyi/">更多</a></span></li>
+          </ul>
+          <ul style="display:none;">
+            <li class="ltitle">日排名 <span><a href="####" alt="0">总</a><a href="####" alt="1">周</a><a href="####"
+                  alt="2">月</a> 日</span></li>
+
+            <li>1<a href="https://www.yingsx.com/23_23896/">为了蔚蓝澄净的世界</a></li>
+
+            <li>2<a href="https://www.yingsx.com/58_58888/">你们修仙我修神</a></li>
+
+            <li>3<a href="https://www.yingsx.com/53_53632/">风水狂婿</a></li>
+
+            <li>4<a href="https://www.yingsx.com/63_63079/">影视诸天，从四合院开始反转人生</a></li>
+
+            <li>5<a href="https://www.yingsx.com/55_55998/">我在末世能升级</a></li>
+
+            <li>6<a href="https://www.yingsx.com/1_1656/">驭房有术</a></li>
+
+            <li>7<a href="https://www.yingsx.com/55_55545/">我真是飞翔的河南人号船长啊</a></li>
+
+            <li>8<a href="https://www.yingsx.com/32_32360/">神级医生系统</a></li>
+
+            <li>9<a href="https://www.yingsx.com/31_31422/">逍遥兵王</a></li>
+
+            <li>10<a href="https://www.yingsx.com/0_735/">时空道观</a></li>
+
+            <li>11<a href="https://www.yingsx.com/97_97010/">末世指挥官</a></li>
+
+            <li>12<a href="https://www.yingsx.com/59_59611/">镇魂街之最强寄灵人</a></li>
+
+            <li>13<a href="https://www.yingsx.com/78_78631/">我给从前写了亿封信</a></li>
+
+            <li>14<a href="https://www.yingsx.com/78_78515/">抽卡从阿兹卡班开始</a></li>
+
+            <li>15<a href="https://www.yingsx.com/61_61540/">养老计划从三国扩到诸天</a></li>
+
+            <li>16<a href="https://www.yingsx.com/31_31309/">叶罗丽之王默公主</a></li>
+
+            <li>17<a href="https://www.yingsx.com/26_26308/">进击的大内密探</a></li>
+
+            <li>18<a href="https://www.yingsx.com/11_11570/">神级弃少在都市</a></li>
+
+            <li>19<a href="https://www.yingsx.com/5_5538/">快穿之位面商城</a></li>
+
+            <li>20<a href="https://www.yingsx.com/77_77034/">末世重生之弑神</a></li>
+
+            <li class="more"><span><a href="/xuanyi/">更多</a></span></li>
+          </ul>
+        </div>
+
+        <div class="box b3">
+          <h3>全本小说推荐排行榜</h3>
+          <ul>
+            <li class="ltitle">总排名 <span>总 <a href="####" alt="1">周</a><a href="####" alt="2">月</a><a href="####"
+                  alt="3">日</a></span></li>
+
+
+            <li>1<a href="https://www.yingsx.com/5_5731/">完美世界</a></li>
+
+            <li>2<a href="https://www.yingsx.com/5_5593/">琴帝</a></li>
+
+            <li>3<a href="https://www.yingsx.com/6_6340/">天珠变</a></li>
+
+            <li>4<a href="https://www.yingsx.com/5_5573/">酒神</a></li>
+
+            <li>5<a href="https://www.yingsx.com/5_5864/">天才相师</a></li>
+
+            <li>6<a href="https://www.yingsx.com/5_5851/">斗罗大陆</a></li>
+
+            <li>7<a href="https://www.yingsx.com/5_5715/">星辰变</a></li>
+
+            <li>8<a href="https://www.yingsx.com/5_5785/">武动乾坤</a></li>
+
+            <li>9<a href="https://www.yingsx.com/22_22606/">生肖守护神</a></li>
+
+            <li>10<a href="https://www.yingsx.com/5_5854/">大主宰</a></li>
+
+            <li>11<a href="https://www.yingsx.com/5_5841/">斗破苍穹</a></li>
+
+            <li>12<a href="https://www.yingsx.com/6_6974/">良陈美锦</a></li>
+
+            <li>13<a href="https://www.yingsx.com/5_5722/">神墓</a></li>
+
+            <li>14<a href="https://www.yingsx.com/7_7568/">雪中悍刀行</a></li>
+
+            <li>15<a href="https://www.yingsx.com/11_11252/">名门闺杀</a></li>
+
+            <li>16<a href="https://www.yingsx.com/8_8780/">斩龙</a></li>
+
+            <li>17<a href="https://www.yingsx.com/5_5738/">仙逆</a></li>
+
+            <li>18<a href="https://www.yingsx.com/5_5688/">遮天</a></li>
+
+            <li>19<a href="https://www.yingsx.com/5_5711/">隐杀</a></li>
+
+            <li>20<a href="https://www.yingsx.com/22_22473/">空速星痕</a></li>
+
+          </ul>
+          <ul style="display:none;">
+            <li class="ltitle">周排名 <span><a href="####" alt="0">总</a> 周<a href="####" alt="2">月</a><a href="####"
+                  alt="3">日</a></span></li>
+
+            <li>1<a href="https://www.yingsx.com/35_35901/">都市仙武</a></li>
+
+            <li>2<a href="https://www.yingsx.com/12_12835/">北宋小官人的幸福生活</a></li>
+
+            <li>3<a href="https://www.yingsx.com/11_11014/">青春罪途</a></li>
+
+            <li>4<a href="https://www.yingsx.com/6_6835/">武神空间</a></li>
+
+            <li>5<a href="https://www.yingsx.com/70_70939/">吞天决</a></li>
+
+            <li>6<a href="https://www.yingsx.com/23_23996/">超级搜鬼仪</a></li>
+
+            <li>7<a href="https://www.yingsx.com/23_23102/">重生之玩物人生</a></li>
+
+            <li>8<a href="https://www.yingsx.com/28_28890/">男儿行</a></li>
+
+            <li>9<a href="https://www.yingsx.com/7_7765/">商海时代陈曦</a></li>
+
+            <li>10<a href="https://www.yingsx.com/6_6269/">人道至尊</a></li>
+
+            <li>11<a href="https://www.yingsx.com/24_24724/">司茶皇后</a></li>
+
+            <li>12<a href="https://www.yingsx.com/12_12503/">活人禁忌</a></li>
+
+            <li>13<a href="https://www.yingsx.com/20_20607/">我要做皇帝</a></li>
+
+            <li>14<a href="https://www.yingsx.com/13_13638/">大唐风华路</a></li>
+
+            <li>15<a href="https://www.yingsx.com/28_28193/">战神变</a></li>
+
+            <li>16<a href="https://www.yingsx.com/9_9738/">俏汉宠农妻：这个娘子好辣</a></li>
+
+            <li>17<a href="https://www.yingsx.com/28_28251/">异界海盗王</a></li>
+
+            <li>18<a href="https://www.yingsx.com/22_22679/">剑噬天下</a></li>
+
+            <li>19<a href="https://www.yingsx.com/26_26589/">网游之傲视群雄</a></li>
+
+            <li>20<a href="https://www.yingsx.com/25_25167/">凌云志异</a></li>
+
+          </ul>
+          <ul style="display:none;">
+            <li class="ltitle">月排名 <span><a href="####" alt="0">总</a><a href="####" alt="1">周</a> 月<a href="####"
+                  alt="3">日</a></span></li>
+
+            <li>1<a href="https://www.yingsx.com/6_6269/">人道至尊</a></li>
+
+            <li>2<a href="https://www.yingsx.com/23_23307/">抗战之中国远征军</a></li>
+
+            <li>3<a href="https://www.yingsx.com/70_70939/">吞天决</a></li>
+
+            <li>4<a href="https://www.yingsx.com/35_35901/">都市仙武</a></li>
+
+            <li>5<a href="https://www.yingsx.com/12_12835/">北宋小官人的幸福生活</a></li>
+
+            <li>6<a href="https://www.yingsx.com/24_24724/">司茶皇后</a></li>
+
+            <li>7<a href="https://www.yingsx.com/6_6177/">网游之近战法师</a></li>
+
+            <li>8<a href="https://www.yingsx.com/6_6835/">武神空间</a></li>
+
+            <li>9<a href="https://www.yingsx.com/23_23996/">超级搜鬼仪</a></li>
+
+            <li>10<a href="https://www.yingsx.com/22_22545/">网游之模拟城市</a></li>
+
+            <li>11<a href="https://www.yingsx.com/6_6797/">宝瞳</a></li>
+
+            <li>12<a href="https://www.yingsx.com/18_18481/">网游之剑仙降临</a></li>
+
+            <li>13<a href="https://www.yingsx.com/12_12503/">活人禁忌</a></li>
+
+            <li>14<a href="https://www.yingsx.com/11_11014/">青春罪途</a></li>
+
+            <li>15<a href="https://www.yingsx.com/6_6370/">重生之神级学霸</a></li>
+
+            <li>16<a href="https://www.yingsx.com/23_23102/">重生之玩物人生</a></li>
+
+            <li>17<a href="https://www.yingsx.com/13_13638/">大唐风华路</a></li>
+
+            <li>18<a href="https://www.yingsx.com/28_28890/">男儿行</a></li>
+
+            <li>19<a href="https://www.yingsx.com/7_7765/">商海时代陈曦</a></li>
+
+            <li>20<a href="https://www.yingsx.com/11_11352/">重生超级巨星</a></li>
+
+          </ul>
+          <ul style="display:none;">
+            <li class="ltitle">日排名 <span><a href="####" alt="0">总</a><a href="####" alt="1">周</a><a href="####"
+                  alt="2">月</a> 日</span></li>
+
+            <li>1<a href="https://www.yingsx.com/23_23102/">重生之玩物人生</a></li>
+
+            <li>2<a href="https://www.yingsx.com/24_24724/">司茶皇后</a></li>
+
+            <li>3<a href="https://www.yingsx.com/20_20607/">我要做皇帝</a></li>
+
+            <li>4<a href="https://www.yingsx.com/70_70939/">吞天决</a></li>
+
+            <li>5<a href="https://www.yingsx.com/22_22679/">剑噬天下</a></li>
+
+            <li>6<a href="https://www.yingsx.com/23_23226/">从前有座灵剑山</a></li>
+
+            <li>7<a href="https://www.yingsx.com/23_23307/">抗战之中国远征军</a></li>
+
+            <li>8<a href="https://www.yingsx.com/13_13638/">大唐风华路</a></li>
+
+            <li>9<a href="https://www.yingsx.com/28_28890/">男儿行</a></li>
+
+            <li>10<a href="https://www.yingsx.com/28_28193/">战神变</a></li>
+
+            <li>11<a href="https://www.yingsx.com/26_26308/">进击的大内密探</a></li>
+
+            <li>12<a href="https://www.yingsx.com/23_23996/">超级搜鬼仪</a></li>
+
+            <li>13<a href="https://www.yingsx.com/23_23158/">极品草根太子</a></li>
+
+            <li>14<a href="https://www.yingsx.com/12_12835/">北宋小官人的幸福生活</a></li>
+
+            <li>15<a href="https://www.yingsx.com/9_9602/">第一狂妃：绝色邪王宠妻无度</a></li>
+
+            <li>16<a href="https://www.yingsx.com/7_7765/">商海时代陈曦</a></li>
+
+            <li>17<a href="https://www.yingsx.com/28_28118/">龙境秘踪</a></li>
+
+            <li>18<a href="https://www.yingsx.com/22_22884/">光之子</a></li>
+
+            <li>19<a href="https://www.yingsx.com/10_10895/">莫负寒夏</a></li>
+
+            <li>20<a href="https://www.yingsx.com/7_7540/">修真世界</a></li>
+
+          </ul>
+        </div>
+
+        <div class="box b4">
+          <h3>全部小说推荐排行榜</h3>
+          <ul>
+            <li class="ltitle">总排名 <span>总 <a href="####" alt="1">周</a><a href="####" alt="2">月</a><a href="####"
+                  alt="3">日</a></span></li>
+
+
+            <li>1<a href="https://www.yingsx.com/0_384/">斗罗大陆4</a></li>
+
+            <li>2<a href="https://www.yingsx.com/5_5556/">斗罗大陆II绝世唐门</a></li>
+
+            <li>3<a href="https://www.yingsx.com/53_53010/">老子能召唤万物</a></li>
+
+            <li>4<a href="https://www.yingsx.com/5_5731/">完美世界</a></li>
+
+            <li>5<a href="https://www.yingsx.com/5_5166/">终极斗罗</a></li>
+
+            <li>6<a href="https://www.yingsx.com/0_680/">陆鸣至尊神殿</a></li>
+
+            <li>7<a href="https://www.yingsx.com/5_5593/">琴帝</a></li>
+
+            <li>8<a href="https://www.yingsx.com/0_380/">叶辰孙怡夏若雪</a></li>
+
+            <li>9<a href="https://www.yingsx.com/6_6398/">神印王座</a></li>
+
+            <li>10<a href="https://www.yingsx.com/6_6340/">天珠变</a></li>
+
+            <li>11<a href="https://www.yingsx.com/3_3125/">斗罗大陆5重生唐三</a></li>
+
+            <li>12<a href="https://www.yingsx.com/2_2791/">大奉打更人</a></li>
+
+            <li>13<a href="https://www.yingsx.com/5_5573/">酒神</a></li>
+
+            <li>14<a href="https://www.yingsx.com/17_17501/">女神的超级赘婿</a></li>
+
+            <li>15<a href="https://www.yingsx.com/3_3984/">死亡万花筒</a></li>
+
+            <li>16<a href="https://www.yingsx.com/4_4160/">AWM[绝地求生]</a></li>
+
+            <li>17<a href="https://www.yingsx.com/0_381/">临渊行</a></li>
+
+            <li>18<a href="https://www.yingsx.com/0_804/">超神机械师</a></li>
+
+            <li>19<a href="https://www.yingsx.com/3_3894/">神级龙卫</a></li>
+
+            <li>20<a href="https://www.yingsx.com/23_23981/">我师兄实在太稳健了</a></li>
+
+            <li>21<a href="https://www.yingsx.com/5_5864/">天才相师</a></li>
+
+          </ul>
+          <ul style="display:none;">
+            <li class="ltitle">周排名 <span><a href="####" alt="0">总</a> 周<a href="####" alt="2">月</a><a href="####"
+                  alt="3">日</a></span></li>
+
+            <li>1<a href="https://www.yingsx.com/55_55776/">全球游戏：开局百亿灵能币</a></li>
+
+            <li>2<a href="https://www.yingsx.com/9_9030/">修真界的微信拍卖群</a></li>
+
+            <li>3<a href="https://www.yingsx.com/41_41841/">漫威的公主终成王</a></li>
+
+            <li>4<a href="https://www.yingsx.com/18_18347/">重生九零神医福妻</a></li>
+
+            <li>5<a href="https://www.yingsx.com/48_48035/">蜀道再现</a></li>
+
+            <li>6<a href="https://www.yingsx.com/71_71981/">从流星蝴蝶剑开始</a></li>
+
+            <li>7<a href="https://www.yingsx.com/70_70769/">从jojo开始的奇妙体验</a></li>
+
+            <li>8<a href="https://www.yingsx.com/15_15398/">魔神狂后</a></li>
+
+            <li>9<a href="https://www.yingsx.com/6_6398/">神印王座</a></li>
+
+            <li>10<a href="https://www.yingsx.com/59_59833/">原神我是史莱姆</a></li>
+
+            <li>11<a href="https://www.yingsx.com/15_15931/">万古第一神</a></li>
+
+            <li>12<a href="https://www.yingsx.com/1_1872/">二次元马甲系统</a></li>
+
+            <li>13<a href="https://www.yingsx.com/99_99514/">重生1990：我有三根金手指</a></li>
+
+            <li>14<a href="https://www.yingsx.com/95_95874/">全属性大帝，无敌全靠捡</a></li>
+
+            <li>15<a href="https://www.yingsx.com/35_35901/">都市仙武</a></li>
+
+            <li>16<a href="https://www.yingsx.com/64_64224/">顶流喜剧人</a></li>
+
+            <li>17<a href="https://www.yingsx.com/1_1607/">我的1979</a></li>
+
+            <li>18<a href="https://www.yingsx.com/12_12835/">北宋小官人的幸福生活</a></li>
+
+            <li>19<a href="https://www.yingsx.com/11_11014/">青春罪途</a></li>
+
+            <li>20<a href="https://www.yingsx.com/54_54856/">海贼之恋爱系统</a></li>
+
+            <li>21<a href="https://www.yingsx.com/48_48723/">翩然入君心魏翩然霍纬钧</a></li>
+
+          </ul>
+          <ul style="display:none;">
+            <li class="ltitle">月排名 <span><a href="####" alt="0">总</a><a href="####" alt="1">周</a> 月<a href="####"
+                  alt="3">日</a></span></li>
+
+            <li>1<a href="https://www.yingsx.com/6_6398/">神印王座</a></li>
+
+            <li>2<a href="https://www.yingsx.com/6_6269/">人道至尊</a></li>
+
+            <li>3<a href="https://www.yingsx.com/55_55776/">全球游戏：开局百亿灵能币</a></li>
+
+            <li>4<a href="https://www.yingsx.com/18_18347/">重生九零神医福妻</a></li>
+
+            <li>5<a href="https://www.yingsx.com/89_89521/">祖宗人：从格温蜘蛛侠开始</a></li>
+
+            <li>6<a href="https://www.yingsx.com/41_41841/">漫威的公主终成王</a></li>
+
+            <li>7<a href="https://www.yingsx.com/9_9030/">修真界的微信拍卖群</a></li>
+
+            <li>8<a href="https://www.yingsx.com/5_5030/">医品至尊</a></li>
+
+            <li>9<a href="https://www.yingsx.com/51_51973/">我能升级万物</a></li>
+
+            <li>10<a href="https://www.yingsx.com/1_1607/">我的1979</a></li>
+
+            <li>11<a href="https://www.yingsx.com/48_48035/">蜀道再现</a></li>
+
+            <li>12<a href="https://www.yingsx.com/16_16968/">我有一座诸天城</a></li>
+
+            <li>13<a href="https://www.yingsx.com/71_71981/">从流星蝴蝶剑开始</a></li>
+
+            <li>14<a href="https://www.yingsx.com/70_70769/">从jojo开始的奇妙体验</a></li>
+
+            <li>15<a href="https://www.yingsx.com/99_99514/">重生1990：我有三根金手指</a></li>
+
+            <li>16<a href="https://www.yingsx.com/97_97516/">高武：无敌从基础箭法开始</a></li>
+
+            <li>17<a href="https://www.yingsx.com/23_23307/">抗战之中国远征军</a></li>
+
+            <li>18<a href="https://www.yingsx.com/15_15398/">魔神狂后</a></li>
+
+            <li>19<a href="https://www.yingsx.com/8_8662/">少年医仙</a></li>
+
+            <li>20<a href="https://www.yingsx.com/3_3125/">斗罗大陆5重生唐三</a></li>
+
+            <li>21<a href="https://www.yingsx.com/54_54856/">海贼之恋爱系统</a></li>
+
+          </ul>
+          <ul style="display:none;">
+            <li class="ltitle">日排名 <span><a href="####" alt="0">总</a><a href="####" alt="1">周</a><a href="####"
+                  alt="2">月</a> 日</span></li>
+
+            <li>1<a href="https://www.yingsx.com/55_55776/">全球游戏：开局百亿灵能币</a></li>
+
+            <li>2<a href="https://www.yingsx.com/9_9030/">修真界的微信拍卖群</a></li>
+
+            <li>3<a href="https://www.yingsx.com/71_71981/">从流星蝴蝶剑开始</a></li>
+
+            <li>4<a href="https://www.yingsx.com/64_64224/">顶流喜剧人</a></li>
+
+            <li>5<a href="https://www.yingsx.com/1_1872/">二次元马甲系统</a></li>
+
+            <li>6<a href="https://www.yingsx.com/15_15931/">万古第一神</a></li>
+
+            <li>7<a href="https://www.yingsx.com/48_48723/">翩然入君心魏翩然霍纬钧</a></li>
+
+            <li>8<a href="https://www.yingsx.com/48_48035/">蜀道再现</a></li>
+
+            <li>9<a href="https://www.yingsx.com/65_65518/">我的影子开外挂啊</a></li>
+
+            <li>10<a href="https://www.yingsx.com/50_50779/">我家地球连诸天</a></li>
+
+            <li>11<a href="https://www.yingsx.com/8_8786/">命之途</a></li>
+
+            <li>12<a href="https://www.yingsx.com/68_68550/">脑海带着一扇门</a></li>
+
+            <li>13<a href="https://www.yingsx.com/23_23896/">为了蔚蓝澄净的世界</a></li>
+
+            <li>14<a href="https://www.yingsx.com/58_58888/">你们修仙我修神</a></li>
+
+            <li>15<a href="https://www.yingsx.com/25_25046/">最强功法升级系统</a></li>
+
+            <li>16<a href="https://www.yingsx.com/38_38702/">从斗破签到之开局十连抽</a></li>
+
+            <li>17<a href="https://www.yingsx.com/53_53632/">风水狂婿</a></li>
+
+            <li>18<a href="https://www.yingsx.com/23_23102/">重生之玩物人生</a></li>
+
+            <li>19<a href="https://www.yingsx.com/5_5634/">我和二哈共系统</a></li>
+
+            <li>20<a href="https://www.yingsx.com/63_63079/">影视诸天，从四合院开始反转人生</a></li>
+
+            <li>21<a href="https://www.yingsx.com/48_48717/">我不可能是剑神</a></li>
+
+          </ul>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="footer">
+      <div class="footer_link"></div>
+      <div class="footer_cont">
+        <script>footer(); right(); dl();</script>
+      </div>
+    </div>
+
+  </div>
+</body>
+<script charset="utf-8" src="//www.baidu.com/js/opensug.js"></script>
+
+</html>
